@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Linking, View, TouchableOpacity, Text, Image} from 'react-native'
 import styles from './styles'
 import ButtonIcon from '../Button/ButtonIcon'
+import { faEnvelope, faInfo } from '@fortawesome/free-solid-svg-icons';
 
 interface Props {
     textInfo : string;
@@ -38,18 +39,16 @@ const ProfileCard = ({textInfo, linkEmail, linkInfo, imgList} : Props) => {
                 <View style={styles.containerButton}>
                     <ButtonIcon
                         text='Email'
-                        icon='email'
+                        icon={faEnvelope}
                         color='#725235'
                         onPress={handleEmail}
-                    >
-                    </ButtonIcon>
+                    />
                     <ButtonIcon
                         text='Wiki'
-                        icon='info'
+                        icon={faInfo}
                         color='#725235'
                         onPress={handleLink}
-                    >
-                    </ButtonIcon>
+                    />
                 </View>
             </View>
     )

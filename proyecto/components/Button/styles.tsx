@@ -29,10 +29,15 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         paddingLeft: 6
     },
-    containerIcon: {
+    containerIconText: {
         justifyContent: 'center',
         paddingRight: 5,
         marginLeft: -8,
+    },
+    containerIcon: {
+        alignItems: 'center',
+        justifyContent: 'center',
+        paddingLeft: 5
     }
 })
 
